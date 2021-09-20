@@ -1,22 +1,22 @@
 # JSON Web Token with Java Example
 
-This example app shows how to use [JJWT](https://github.com/jwtk/jjwt) to encode and decode a simple JSON Web Token.
-
-<!-- Add link to blog post here -->
-
-Prerequisites: [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-
-## Clone the repo
-
-```bash
-git clone https://github.com/oktadeveloper/okta-java-jwt-example.git 
-cd okta-java-jwt-example
-```
-
 ## Run the tests
+1) Go to JWTDemoTest.java
+2) Right click and run
+3) JWT token, Header, and Claims should be printed in console.
+4) Filter the console by typing in searchbar the following text
+    Header = //to filter the header
+    jwt = //to see the token
+    claims = //to see the claims
 
-```bash
-./gradlew test -i
-```
 
-For more info take a look at the [JWTDemo](https://github.com/oktadeveloper/okta-java-jwt-example/blob/master/src/main/java/com/okta/createverifytokens/JWTDemo.java) class.
+
+!!!NOTE!!!
+ The RSA private key is hard coded in the variable SECRET_KEY in JWTDemo.java. if you wish to use this token, update the public key the portal.
+ Currently the token is available from today 09/20/21 till 09/20/22. If you are using this project after 09/20/22. Update the issue time and expiration time of the
+ token in JWTDemo.createJWTSignedToken()
+
+Public and Private keys are provided uner RSA directory of this project.
+
+
+
